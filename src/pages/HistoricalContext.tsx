@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Clock, Sword, Users, Building, Scroll, Crown } from 'lucide-react'
+import filosofosGriegos from '/images/filosofos_griegos.png'
 
 export function HistoricalContext() {
   const historicalPeriods = [
@@ -101,7 +102,7 @@ export function HistoricalContext() {
             </div>
             <div>
               <img
-                src="/images/filosofos_griegos.png"
+                src={filosofosGriegos}
                 alt="Filósofos griegos"
                 className="w-full h-48 object-cover rounded-lg shadow-md"
               />

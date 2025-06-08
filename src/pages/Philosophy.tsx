@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Brain, Eye, Scale, Crown, Lightbulb, Quote, BookOpen } from 'lucide-react'
+import manuscritoFilosofia from '/images/manuscrito_filosofia.jpg'
 
 interface PhilosophyData {
   extracted_information: string
@@ -161,7 +162,7 @@ export function Philosophy() {
         </div>
         <div>
           <img
-            src="/images/manuscrito_filosofia.jpg"
+            src={manuscritoFilosofia}
             alt="Manuscrito filosófico"
             className="w-full h-full object-cover rounded-lg shadow-lg"
           />

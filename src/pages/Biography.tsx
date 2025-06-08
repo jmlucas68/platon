@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Calendar, MapPin, Users, BookOpen, GraduationCap } from 'lucide-react'
+import platonRetrato from '/images/platon_retrato.jpg'
+import academiaAtenas from '/images/academia_atenas.jpg'
 
 interface BiographyData {
   extracted_information: string
@@ -120,7 +122,7 @@ export function Biography() {
           <Card className="overflow-hidden">
             <CardContent className="p-0">
               <img
-                src="/images/platon_retrato.jpg"
+                src={platonRetrato}
                 alt="Retrato de Platón"
                 className="w-full h-64 lg:h-80 object-cover"
               />
@@ -324,7 +326,7 @@ export function Biography() {
             </div>
             <div>
               <img
-                src="/images/academia_atenas.jpg"
+                src={academiaAtenas}
                 alt="Academia de Atenas"
                 className="w-full h-48 object-cover rounded-lg shadow-md"
               />

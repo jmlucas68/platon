@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { BookOpen, User, Clock, Brain, Library, ArrowRight, Crown, Church, FileText, ExternalLink } from 'lucide-react'
+import platonBusto from '/images/platon_busto.jpg'
 
 export function Home() {
   const [platoQuote, setPlatoQuote] = useState('')
@@ -132,7 +133,7 @@ export function Home() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-400/30 to-purple-400/30 rounded-2xl blur-xl"></div>
               <img
-                src="/images/platon_busto.jpg"
+                src={platonBusto}
                 alt="Busto de Platón"
                 className="relative w-80 h-80 object-cover rounded-2xl shadow-2xl"
               />
